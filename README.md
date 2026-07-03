@@ -1,7 +1,5 @@
 # STP-Net
 
-Official implementation for:
-
 **Balancing Integrity and Separation: A Curriculum-Driven Dual-Teacher Framework for 3D Dental Segmentation**
 
 STP-Net is a semi-supervised framework for sparse-label 3D dental segmentation. It targets a key difficulty in dental segmentation: the model must preserve complete tooth morphology, especially roots and low-contrast regions, while also separating adjacent teeth with narrow interdental gaps.
