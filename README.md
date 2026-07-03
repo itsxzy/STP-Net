@@ -1,5 +1,7 @@
 # STP-Net
 
+Official implementation for:
+
 **Balancing Integrity and Separation: A Curriculum-Driven Dual-Teacher Framework for 3D Dental Segmentation**
 
 STP-Net is a semi-supervised framework for sparse-label 3D dental segmentation. It targets a key difficulty in dental segmentation: the model must preserve complete tooth morphology, especially roots and low-contrast regions, while also separating adjacent teeth with narrow interdental gaps.
@@ -31,6 +33,8 @@ flowchart LR
     PBR --> S
     S --> O["3D dental segmentation"]
 ```
+
+![](E:\DCP-main记录\papers\Titlelabel1\figs\overview.jpg)
 
 ## Main Contributions
 
@@ -79,7 +83,6 @@ STP-Net/
 │   └── utils/
 │       └── ramps.py            # Consistency ramp-up schedule
 ├── requirements.txt
-├── GITHUB_RELEASE_FILES.md
 └── README.md
 ```
 
@@ -112,10 +115,6 @@ tooth_dataset/
 │   └── case002_label.npy
 └── Tmamba_lists2/
     ├── 10percent/
-    │   ├── train_lab.txt
-    │   ├── train_unlab.txt
-    │   └── test.txt
-    ├── 15percent/
     │   ├── train_lab.txt
     │   ├── train_unlab.txt
     │   └── test.txt
@@ -163,10 +162,15 @@ Prepare split files:
 
 ```text
 miccai_lists/
-└── 10percent/
-    ├── train_lab.txt
-    ├── train_unlab.txt
-    └── test.txt
+  ├── 10percent/
+  │   ├── train_lab.txt
+  │   ├── train_unlab.txt
+  │   └── test.txt
+  └── 20percent/
+      ├── train_lab.txt
+      ├── train_unlab.txt
+      └── test.txt
+    
 ```
 
 ## Training
