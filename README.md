@@ -34,7 +34,7 @@ flowchart LR
     S --> O["3D dental segmentation"]
 ```
 
-![](E:\DCP-main记录\papers\Titlelabel1\figs\overview.jpg)
+![](/assets/overview.jpg)
 
 ## Main Contributions
 
